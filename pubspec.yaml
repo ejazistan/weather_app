@@ -1,0 +1,43 @@
+name: weather_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^13.0.1
+  weather: ^3.1.1
+  flare_flutter: ^3.0.0
+  intl: ^0.17.0
+  animations: ^2.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - resources/images/
+  
+  fonts:
+   - family: ProtestGuerrilla
+     fonts:
+       - asset: resources/fonts/ProtestGuerrilla-Regular.ttf
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "resources/images/icon.png"
+  # min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "resources/images/icon.png"
+    # background_color: "#hexcode"
+    # theme_color: "#hexcode"
